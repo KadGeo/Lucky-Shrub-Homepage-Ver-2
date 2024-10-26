@@ -1,1 +1,0 @@
-# Lucky-Shrub-Homepage-Ver-2
