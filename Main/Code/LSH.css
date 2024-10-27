@@ -128,3 +128,15 @@ footer img {
         margin: 10px 0;
     }
 }
+
+section a img {
+    width: 100%;
+    overflow:hidden
+}
+
+section a img {
+    width: 200%;
+    height: 100%;
+    object-fit:cover    
+}
+
