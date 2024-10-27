@@ -1,5 +1,3 @@
-/* CSS for Lucky Shrub homepage */
-
 /* General Reset */
 * {
     margin: 0;
@@ -7,15 +5,18 @@
     box-sizing: border-box;
 }
 
-/* Styling for the body */
+/* Body Styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
     flex-direction: column;
-    align-items: center; /* Center body content horizontally */
 }
 
 /* Header Styling */
@@ -23,7 +24,6 @@ header {
     background-color: #006400; /* Dark green */
     padding: 20px;
     text-align: center;
-    width: 100%; /* Make the header span the full width */
 }
 
 header img {
@@ -34,14 +34,12 @@ header img {
 nav {
     background-color: #32CD32; /* Lighter green */
     padding: 10px;
-    text-align: center;
-    width: 100%; /* Make the nav span the full width */
 }
 
 nav ul {
     list-style-type: none;
-    display: flex; /* Flexbox for horizontal layout */
-    justify-content: center; /* Center the nav items horizontally */
+    display: flex; /* Make the navigation horizontal */
+    justify-content: center; /* Center the navigation items */
 }
 
 nav ul li {
@@ -60,16 +58,16 @@ nav ul li a:hover {
 
 /* Main Section */
 main {
-    padding: 20px;
     width: 100%;
-    max-width: 1200px; /* Limit max width for better layout */
+    max-width: 1200px; /* Limit the main content width */
+    padding: 20px;
 }
 
 /* Flexbox Layout for Sections */
 section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center section content horizontally */
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 
@@ -81,8 +79,6 @@ article {
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    max-width: 300px; /* Control article width for better centering */
-    text-align: center; /* Center text inside the article */
 }
 
 /* Article Images */
@@ -134,12 +130,11 @@ footer img {
         flex-direction: column;
     }
 
-    nav ul li {
-        display: block;
-        margin: 10px 0;
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically on smaller screens */
     }
 
-    article {
-        max-width: 100%; /* Make articles full-width on smaller screens */
+    nav ul li {
+        margin: 10px 0;
     }
 }
