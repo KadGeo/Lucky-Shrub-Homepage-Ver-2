@@ -35,10 +35,11 @@ nav {
 
 nav ul {
     list-style-type: none;
+    padding: 0;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 15px;
 }
 
@@ -57,12 +58,15 @@ main {
     padding: 20px;
 }
 
-/* Flexbox Layout for Sections */
+/* Flexbox Layout for Sections, Centered Content */
 section {
     display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     flex-wrap: wrap;
-    justify-content: space-between;
     margin-bottom: 20px;
+    padding: 20px;
+    text-align: center; /* Ensure content within sections is centered */
 }
 
 /* Article Styling */
@@ -73,6 +77,7 @@ article {
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    max-width: 300px; /* Optional: to keep article sizes reasonable */
 }
 
 /* Article Images */
