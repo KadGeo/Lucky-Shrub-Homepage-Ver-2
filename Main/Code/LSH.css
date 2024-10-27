@@ -13,6 +13,9 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center body content horizontally */
 }
 
 /* Header Styling */
@@ -20,6 +23,7 @@ header {
     background-color: #006400; /* Dark green */
     padding: 20px;
     text-align: center;
+    width: 100%; /* Make the header span the full width */
 }
 
 header img {
@@ -31,15 +35,16 @@ nav {
     background-color: #32CD32; /* Lighter green */
     padding: 10px;
     text-align: center;
+    width: 100%; /* Make the nav span the full width */
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: center; /* Center the nav items horizontally */
 }
 
 nav ul li {
-    display: inline-block;
     margin: 0 15px;
 }
 
@@ -56,17 +61,16 @@ nav ul li a:hover {
 /* Main Section */
 main {
     padding: 20px;
+    width: 100%;
+    max-width: 1200px; /* Limit max width for better layout */
 }
 
-/* Flexbox Layout for Sections, Centered Content */
+/* Flexbox Layout for Sections */
 section {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
     flex-wrap: wrap;
+    justify-content: center; /* Center section content horizontally */
     margin-bottom: 20px;
-    padding: 20px;
-    text-align: center; /* Ensure content within sections is centered */
 }
 
 /* Article Styling */
@@ -77,7 +81,8 @@ article {
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    max-width: 300px; /* Optional: to keep article sizes reasonable */
+    max-width: 300px; /* Control article width for better centering */
+    text-align: center; /* Center text inside the article */
 }
 
 /* Article Images */
@@ -111,6 +116,7 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
+    width: 100%;
 }
 
 footer div {
@@ -131,5 +137,9 @@ footer img {
     nav ul li {
         display: block;
         margin: 10px 0;
+    }
+
+    article {
+        max-width: 100%; /* Make articles full-width on smaller screens */
     }
 }
