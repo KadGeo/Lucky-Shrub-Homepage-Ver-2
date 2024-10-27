@@ -1,3 +1,5 @@
+/* CSS for Lucky Shrub homepage */
+
 /* General Reset */
 * {
     margin: 0;
@@ -5,7 +7,7 @@
     box-sizing: border-box;
 }
 
-/* Body Styling */
+/* Body Styling to Center Content */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -14,9 +16,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    text-align: center;
     flex-direction: column;
+    min-height: 100vh;
+    text-align: center; /* Center text */
 }
 
 /* Header Styling */
@@ -24,6 +26,7 @@ header {
     background-color: #006400; /* Dark green */
     padding: 20px;
     text-align: center;
+    width: 100%; /* Full width to match the layout */
 }
 
 header img {
@@ -34,11 +37,13 @@ header img {
 nav {
     background-color: #32CD32; /* Lighter green */
     padding: 10px;
+    width: 100%;
+    text-align: center; /* Ensure nav content is centered */
 }
 
 nav ul {
     list-style-type: none;
-    display: flex; /* Make the navigation horizontal */
+    display: flex;
     justify-content: center; /* Center the navigation items */
 }
 
@@ -58,17 +63,20 @@ nav ul li a:hover {
 
 /* Main Section */
 main {
-    width: 100%;
-    max-width: 1200px; /* Limit the main content width */
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content in the main section */
+    width: 100%;
 }
 
 /* Flexbox Layout for Sections */
 section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center; /* Center articles within sections */
     margin-bottom: 20px;
+    width: 100%;
 }
 
 /* Article Styling */
@@ -79,6 +87,7 @@ article {
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    max-width: 300px; /* Set a max width for each article */
 }
 
 /* Article Images */
@@ -104,6 +113,7 @@ section a img {
     width: 100%;
     height: auto;
     border-radius: 5px;
+    max-width: 600px; /* Limit the size of the banner image */
 }
 
 /* Footer Styling */
@@ -128,10 +138,6 @@ footer img {
 @media (max-width: 768px) {
     section {
         flex-direction: column;
-    }
-
-    nav ul {
-        flex-direction: column; /* Stack navigation items vertically on smaller screens */
     }
 
     nav ul li {
