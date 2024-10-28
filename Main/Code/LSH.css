@@ -73,6 +73,7 @@ article {
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    text-align: center;
 }
 
 /* Article Images */
@@ -84,13 +85,15 @@ article img {
 
 /* Article Text */
 article h1 {
-    font-size: 24px;
+    font-size: 80px;
     margin: 10px 0;
 }
 
-article p {
+article p {'
+    font-family:"Snell Roundhand", cursive
     font-size: 16px;
     color: #555;
+    text-align: center;
 }
 
 /* Promotional Banner Styling */
@@ -129,14 +132,17 @@ footer img {
     }
 }
 
-section a img {
-    width: 100%;
-    overflow:hidden
+/* Promotional Banner Styling */
+section a {
+    display: block; /* Ensure the anchor is a block-level element */
+    width: 100%; /* Make the anchor take up the full width */
 }
 
 section a img {
-    width: 200%;
-    height: 100%;
-    object-fit:cover    
+    width: 100%; /* Ensure the image takes up the full width of the anchor */
+    height: auto%; /* Maintain the aspect ratio */
+    display: block; /autoevent any extra space below the image */
+    border-radius: 5px; /* Optional, for rounded corners */
 }
+
 
