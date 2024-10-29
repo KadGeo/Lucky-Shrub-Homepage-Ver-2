@@ -89,8 +89,8 @@ article h1 {
     margin: 10px 0;
 }
 
-article p {'
-    font-family:"Snell Roundhand", cursive
+article p {
+    font-family:"Snell Roundhand", cursive;
     font-size: 16px;
     color: #555;
     text-align: center;
@@ -140,8 +140,8 @@ section a {
 
 section a img {
     width: 100%; /* Ensure the image takes up the full width of the anchor */
-    height: auto%; /* Maintain the aspect ratio */
-    display: block; /autoevent any extra space below the image */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /*autoevent any extra space below the image */
     border-radius: 5px; /* Optional, for rounded corners */
 }
 
