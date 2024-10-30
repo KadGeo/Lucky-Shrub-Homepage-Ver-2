@@ -145,4 +145,14 @@ section a img {
     border-radius: 5px; /* Optional, for rounded corners */
 }
 
+.image-wrapper {
+    width:490px;
+    height:310px;
+    overflow:hidden;
+    position:relative;
+}
 
+.orchid-collection {
+    width: 100%;
+    height: auto;
+}
