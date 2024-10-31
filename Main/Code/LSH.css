@@ -165,6 +165,12 @@ footer div{
     flex:1;
 }
 
-.copyrighttext {
-    
+.copyright-text {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 1px solid #ccc;
+    font-size: 25px;   
 }
+
