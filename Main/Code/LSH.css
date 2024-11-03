@@ -173,3 +173,19 @@ footer div{
     font-size: 25px;   
 }
 
+.promo-message {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height: 200px;
+    font-size: 50px;  
+}
+
+.promo-section {
+    justify-content:center;
+    align-items: center;
+    font-weight: bold;
+    background-color:white
+
+}
+
