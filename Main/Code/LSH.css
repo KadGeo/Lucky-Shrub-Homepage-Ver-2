@@ -189,3 +189,11 @@ footer div{
 
 }
 
+/* Make the link take up the entire column area */
+.clickable-column {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; /* Removes underline from the link */
+    color: inherit; /* Inherits the text color to keep default styling */
+  }
